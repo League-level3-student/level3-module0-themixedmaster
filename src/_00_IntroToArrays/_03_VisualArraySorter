@@ -2,7 +2,6 @@
 
 //1. create an array of ints. don't initialize it yet.
 
-
 void setup() {
   //2. set the size of your window
   //  if you are using Processing 3, you cannot use variables

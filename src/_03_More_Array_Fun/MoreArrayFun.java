@@ -44,17 +44,17 @@ public class MoreArrayFun {
 	//   in a completely random order. Almost every run of the program should result in a different order.
 	static void method5(String[] string){
 		String [] scramble = new String[string.length];
-		System.out.println("hi");
 		for(int x = 0;x < scramble.length;x++){
 			scramble[x]="null";
 		}
 		for(int x = 0;x < scramble.length;x++){
 			Random r = new Random();
-			int rng = r.nextInt(string.length-1);
+			int rng = r.nextInt(string.length);
 			while(string[rng]=="null"){
-				rng = r.nextInt(string.length-1);
+				rng = r.nextInt(string.length);
 			}
 			scramble[x]=string[rng];
+			System.out.println(string[x]);
 			string[rng]="null";
 		}
 		
